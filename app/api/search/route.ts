@@ -7,7 +7,7 @@ export async function GET(req: Request) {
   if (!query) return NextResponse.json([]);
 
   const res = await fetch(
-    `https://api.rawg.io/api/games?key=${process.env.RAWG_API_KEY}&search=${query}&page_size=20`,
+    `https://api.rawg.io/api/games?key=${process.env.RAWG_API_KEY}&search=${query}&page_size=20&ordering=-rating`,
   );
 
   const data = await res.json();

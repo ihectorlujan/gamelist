@@ -32,7 +32,7 @@ export default function GameCard({ game }: { game: RAWGGame }) {
       </div>
 
       {/* Hover overlay */}
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-black/40 backdrop-blur-sm flex items-center justify-center">
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-80 transition duration-300 bg-black/40 backdrop-blur-sm flex items-center justify-center">
         <button className="px-3 py-1 text-sm bg-white text-black rounded-md">
           View
         </button>
